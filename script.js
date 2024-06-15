@@ -16,7 +16,7 @@ async function weatherReport(){
     
     const getData = await fetch(apiUrl +cityName + `${apiKey}`);
     let data = await getData.json()
-    console.log(apiUrl);
+    // console.log(apiUrl);
 
     tempel.innerHTML = Math.round(data.main.temp)
     city.innerHTML = data.name
@@ -31,5 +31,4 @@ async function weatherReport(){
 userBtn.addEventListener('click', ()=>{
     cityName = userInput.value
     weatherReport()
-    console.log(cityName)
 })
