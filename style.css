@@ -1,0 +1,123 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aliceblue; */
+    background-color: #92a8d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+p{
+    font-size: 17px;
+    color: #fff;
+}
+.card{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 40px;
+    padding: 40px;
+    background-color: rgba(90, 215, 71, 0.463);
+    background-color: #034f84;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.header input{
+    width: 60%;
+    padding: 10px;
+    height: 50px;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(6, 250, 250);
+    border-radius: 10px;
+    font-size: 18px;
+}
+.header input::placeholder{
+    font-size: 18px;
+}
+.header button{
+    border: 0;
+    outline: none;
+    width: 30%;
+    background-color: rgb(6, 250, 250);
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+}
+.weatherReport{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    color: #fff;
+}
+.weatherReport .icon{
+    width: 130px;
+}
+.weatherReport h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.weatherReport h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.weatherDetails{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    /* background-color: red; */
+}
+.detailsone{
+    width: 50%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.detailsone img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+@media (max-width: 400px){
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .header input{
+        width: 100%;
+        box-shadow: none;
+    }
+    .header button{
+        width: 100%;
+        height: 40px;
+    }
+    .weatherDetails{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .detailsone img{
+        width: 40px;
+        margin-right: 40px;
+    }
+}
